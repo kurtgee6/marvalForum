@@ -5,7 +5,10 @@
     margin: 0 auto;
     border: 1px solid black;
     margin-top: 20px;
+    margin-bottom: 25px;
 }
+
+/*containter text for making a post*/
 
 .mk-pt-txt-cont {
     padding: 8px;
@@ -15,14 +18,20 @@
     text-align: left;
 }
 
+/*make post form container*/
+
 .mk-pt-in-cont {
     padding: 10px;
     width: 600px;
 }
 
+/*input field*/
+
 input {
     width: 350px;
 }
+
+/*submit button*/
 
 #submit {
     background-color: black;
@@ -31,4 +40,53 @@ input {
     float: right;
     margin-top: 0;
     margin: 10px;
+}
+
+/*video container*/
+
+.v-ct {
+    border: 1px solid black;
+}
+
+/*video text container*/
+
+.v-pt-txt-cont {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/*video whole container*/
+
+.v-whl-cont {
+    padding: 0 15px;
+    height: 350px;
+}
+
+/*right content container*/
+
+.v-rght-cont {
+    background-color: #e23636;
+    color: white;
+}
+
+/*left video container*/
+
+.v-lft-cont {
+    background: url("images/infinity-war.jpg")no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+/*review*/
+
+.v-m-cont {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 85%;
+    width: 75%;
 }

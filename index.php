@@ -19,14 +19,14 @@
 
     <?php require_once('partials/navbar.php');?>
     <div class="tab-content" id="nav-tabContent">
-        <!-- MAKE A POST-->
+        <!-- MAKE A POST TAB-->
         <div class="tab-pane fade show active" id="nav-make-posts" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="mk-pt-cont">
                 <div class="mk-pt-txt-cont">
                     MAKE A POST
                 </div>
                 <div class="mk-pt-in-cont">
-                    <form action="/action_page.php">
+                    <form action="partials/process.php" method="post">
                         <div class="row">
                             <div class="col-2">
                                 Topic:
@@ -49,9 +49,13 @@
                 </div>
             </div>
         </div>
-        <!-- SEE ALL POSTS-->
-        <div class="tab-pane fade" id="nav-all-posts" role="tabpanel" aria-labelledby="nav-profile-tab">all posts</div>
+        <!-- SEE ALL POSTS TAB-->
+        <div class="tab-pane fade" id="nav-all-posts" role="tabpanel" aria-labelledby="nav-profile-tab">
+            all posts
+        </div>
     </div>
+
+    <?php require_once('partials/video.php');?>
 
     <!-- JQuery source -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
