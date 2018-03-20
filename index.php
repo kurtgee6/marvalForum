@@ -51,7 +51,34 @@
         </div>
         <!-- SEE ALL POSTS TAB-->
         <div class="tab-pane fade" id="nav-all-posts" role="tabpanel" aria-labelledby="nav-profile-tab">
-            all posts
+            <div class="container" style="margin-top: 10px;">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Does Iron Man use nanotech to build his suit?</td>
+                            <td>Mr. Soto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Will Captain America survive Infinity War?</td>
+                            <td>Tony Stark</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>How old is Thanos</td>
+                            <td>Peter Quill</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
