@@ -61,21 +61,37 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Does Iron Man use nanotech to build his suit?</td>
-                            <td>Mr. Soto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Will Captain America survive Infinity War?</td>
-                            <td>Tony Stark</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>How old is Thanos</td>
-                            <td>Peter Quill</td>
-                        </tr>
+                        <?php
+                        
+                        $connection = mysqli_connect('localhost', 'root', 'root', 'marvalForum');        
+                        $selectAll = "SELECT * FROM users;";
+                        $r = mysqli_query($connection, $selectAll);
+                            foreach($r as $k => $v){
+                                echo '<tr>
+                                    <th scope="row">'.$v['uid'].'</th>
+                                    <td>'.$v['topic'].'</td>
+                                    <td>'.$v['author'].'</td>
+                                    </tr>';
+
+                            };
+                        ?>
+<!--
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Does Iron Man use nanotech to build his suit?</td>
+                                <td>Mr. Soto</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Will Captain America survive Infinity War?</td>
+                                <td>Tony Stark</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>How old is Thanos</td>
+                                <td>Peter Quill</td>
+                            </tr>
+-->
                     </tbody>
                 </table>
             </div>

@@ -9,12 +9,10 @@ $connection = mysqli_connect('localhost', 'root', 'root', 'marvalForum');
 $qry = "INSERT INTO users (author, topic) VALUES ('$author', '$topic');";
 
 mysqli_query($connection, $qry);
-    
-$selectAll = "SELECT * FROM users;";
-$r = mysqli_query($connection, $selectAll);
-        
+
 mysqli_close($connection);   
 
-header('Location:../submitForm.php');
+header('Location:../index.php');
+
 
 ?>
