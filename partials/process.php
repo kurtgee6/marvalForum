@@ -14,5 +14,4 @@ mysqli_close($connection);
 
 header('Location:../index.php');
 
-
 ?>

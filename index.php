@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1>MARVAL</h1>
+    <h1 style="margin:0; font-size:42pt;">MARVAL</h1>
 
     <?php require_once('partials/navbar.php');?>
     <div class="tab-content" id="nav-tabContent">
@@ -23,7 +23,7 @@
         <div class="tab-pane fade show active" id="nav-make-posts" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="mk-pt-cont">
                 <div class="mk-pt-txt-cont">
-                    MAKE A POST
+                    create a post
                 </div>
                 <div class="mk-pt-in-cont">
                     <form action="partials/process.php" method="post">
@@ -32,7 +32,7 @@
                                 Topic:
                             </div>
                             <div class="col-10">
-                                <input type="text" name="topic">
+                                <input type="text" name="topic" required>
                             </div>
                             <br>
                             <br>
@@ -40,7 +40,7 @@
                                 Author:
                             </div>
                             <div class="col-10">
-                                <input type="text" name="author">
+                                <input type="text" name="author" required>
                             </div>
                         </div>
                         <input id="submit" type="submit" value="Submit">
@@ -75,23 +75,6 @@
 
                             };
                         ?>
-<!--
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Does Iron Man use nanotech to build his suit?</td>
-                                <td>Mr. Soto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Will Captain America survive Infinity War?</td>
-                                <td>Tony Stark</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>How old is Thanos</td>
-                                <td>Peter Quill</td>
-                            </tr>
--->
                     </tbody>
                 </table>
             </div>
