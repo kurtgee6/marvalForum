@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1 style="margin:0; font-size:42pt; color:#e23636; ">MARVEL</h1>
+    <h1 style="margin:0; font-size:42pt; color:#e23636; text-shadow: 2px 2px 2px #fff;">MARVEL</h1>
 
     <?php require_once('partials/navbar.php');?>
     <div class="tab-content" id="nav-tabContent">
