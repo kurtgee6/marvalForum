@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h1 style="margin:0; font-size:42pt;">MARVAL</h1>
+    <h1 style="margin:0; font-size:42pt; color:#e23636; ">MARVEL</h1>
 
     <?php require_once('partials/navbar.php');?>
     <div class="tab-content" id="nav-tabContent">
@@ -23,7 +23,7 @@
         <div class="tab-pane fade show active" id="nav-make-posts" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="mk-pt-cont">
                 <div class="mk-pt-txt-cont">
-                    create a post
+                    CREATE A POST
                 </div>
                 <div class="mk-pt-in-cont">
                     <form action="partials/process.php" method="post">
@@ -54,10 +54,10 @@
             <div class="container" style="margin-top: 10px;">
                 <table class="table table-hover">
                     <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Topic</th>
-                            <th scope="col">Author</th>
+                        <tr class="hd">
+                            <th scope="col">ID</th>
+                            <th scope="col">TOPIC</th>
+                            <th scope="col">AUTHOR</th>
                         </tr>
                     </thead>
                     <tbody>

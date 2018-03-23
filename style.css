@@ -1,3 +1,8 @@
+body {
+    background-image: url('images/stars.gif');
+    background-size: cover;
+}
+
 /*container for making a post*/
 
 .mk-pt-cont {
@@ -6,6 +11,8 @@
     border: 1px solid black;
     margin-top: 20px;
     margin-bottom: 25px;
+    background-color: white;
+
 }
 
 /* navbar style */
@@ -61,6 +68,17 @@ input {
     float: right;
     margin-top: 0;
     margin: 10px;
+}
+
+.table {
+    background-color: white;
+}
+
+/*first tr style*/
+
+.hd {
+    background-color: black;
+    color: white;
 }
 
 /*news container*/
