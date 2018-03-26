@@ -60,6 +60,7 @@ a:hover {
 
 input {
     background: #518cca;
+    border-radius: 2px;
     border: 1px solid black;
     width: 350px;
     color: white;
@@ -119,4 +120,13 @@ input {
 
 h1 {
     font-size: 14pt;
+}
+
+.form-control {
+    padding: 2px;
+    background: #518cca !important;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+    color: white !important;
 }

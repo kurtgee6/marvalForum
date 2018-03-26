@@ -1,0 +1,49 @@
+/*comment container*/
+
+.ad-cm-ct {
+    border-radius: 6px;
+    background-color: #518cca;
+    border: 1px solid black;
+    padding: 8px;
+    color: white;
+}
+
+a {
+    color: #e23636;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #518cca;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*add comment button*/
+
+.ad-bt-cm {
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    font-size: 10pt;
+}
+
+/*post theories*/
+
+.pt {
+    margin: 3px 0;
+}
+
+/*post theories text*/
+
+.pt-tx {
+    color: #518cca;
+}
+
+/*special post theories text*/
+
+.pt-tx-s {
+    color: #e23636;
+}

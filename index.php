@@ -4,14 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Marval</title>
+    <title>Marvel</title>
     <link rel="icon" type="image/png" href="images/marvel-logo.png" />
     <!-- Bootstrap CSS-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- CUSTOM CSS SOURCE  -->
     <link href="style.css" rel="stylesheet">
     <!-- FONT AWESOME -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,19 +29,27 @@
                 <div class="mk-pt-in-cont">
                     <form action="partials/process.php" method="post">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-4">
                                 Topic:
                             </div>
-                            <div class="col-10">
+                            <div class="col-8">
                                 <input type="text" name="topic" required>
                             </div>
                             <br>
                             <br>
-                            <div class="col-2">
+                            <div class="col-4">
                                 Author:
                             </div>
-                            <div class="col-10">
+                            <div class="col-8">
                                 <input type="text" name="author" required>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-4">
+                                Write your theory:
+                            </div>
+                            <div class="col-8">
+                                <textarea class="form-control" name="theory" rows="6" required></textarea>
                             </div>
                         </div>
                         <input id="submit" type="submit" value="Submit">
