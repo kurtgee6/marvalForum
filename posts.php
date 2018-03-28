@@ -10,7 +10,7 @@ while($row = mysqli_fetch_array($result)) {
     $Author = $row['author'];
     $Theory = $row['theory'];
     $Time = $row['timestamp'];
-    $createdDate = date('F j, Y, g:i a', strtotime($Time));
+    $createdDate = date('F j, Y', strtotime($Time));
 }
 ?>
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ while($row = mysqli_fetch_array($result)) {
 
 <head>
     <meta charset="utf-8">
-    <title>Marvel</title>
+    <title>Marval</title>
     <link rel="icon" type="image/png" href="images/marvel-logo.png" />
     <!-- Bootstrap CSS-->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -31,8 +31,8 @@ while($row = mysqli_fetch_array($result)) {
 </head>
 
 <body>
-    <h1 style="margin:0; font-size:42pt; color:#e23636; text-shadow: 2px 2px 2px #fff;">
-        <a href="index.php">MARVEL</a>
+    <h1 style="margin: 4px 8px; font-size:42pt; color:#e23636; text-shadow: 2px 2px 2px #fff;">
+        <a href="index.php">MARVAL</a>
     </h1>
     <hr>
     <div class="container fm-ct">
@@ -75,7 +75,6 @@ while($row = mysqli_fetch_array($result)) {
             </form>
         </div>
     </div>
-
     <!-- JQuery source -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- BOOTSTRAP JS-->

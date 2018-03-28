@@ -1,7 +1,7 @@
 <div class="container">
     <div class="nw-ct">
         <div style="background-color:black; color:white; padding: 2px 5px;">
-            RECENT MARVEL NEWS
+            RECENT MARVAL NEWS
         </div>
         <div class="row bx">
             <div class="col-2">
