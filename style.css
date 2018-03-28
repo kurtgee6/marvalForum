@@ -31,12 +31,20 @@ body {
     color: white;
 }
 
+.nav-item {
+    color: inherit;
+}
+
+.nav-item:hover {
+    color: white !important;
+}
+
 a {
     color: inherit;
 }
 
 a:hover {
-    color: white;
+    color: #e23636 !important;
 }
 
 /*containter text for making a post*/

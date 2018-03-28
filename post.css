@@ -1,5 +1,18 @@
 /*comment container*/
 
+body {
+    background-color: black;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    color: white;
+}
+
 .ad-cm-ct {
     border-radius: 6px;
     background-color: #518cca;
@@ -34,12 +47,13 @@ a:hover {
 
 .pt {
     margin: 3px 0;
+    color: white;
 }
 
-/*post theories text*/
+/*post author text*/
 
 .pt-tx {
-    color: #518cca;
+    color: #d7d7d7;
 }
 
 /*special post theories text*/

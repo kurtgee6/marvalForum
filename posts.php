@@ -1,4 +1,18 @@
-<?php session_start(); ?>
+<?php session_start(); 
+//making the connection
+$connection = mysqli_connect('localhost', 'root', 'root', 'marvalForum');
+$id = $_GET['id'];
+$query = "SELECT * FROM `users` WHERE `id`='" . $id . "'";
+$result = mysqli_query($connection,$query);
+
+while($row = mysqli_fetch_array($result)) {
+    $Topic = $row['topic'];
+    $Author = $row['author'];
+    $Theory = $row['theory'];
+    $Time = $row['timestamp'];
+    $createdDate = date('F j, Y, g:i a', strtotime($Time));
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,33 +35,31 @@
         <a href="index.php">MARVEL</a>
     </h1>
     <hr>
-    <div class="container">
+    <div class="container fm-ct">
         <div class="row">
             <div class="col-2 pt">
                 Topic:
             </div>
             <div class="col-10 pt-tx-s">
-                <div>Adam Warlock won't be in Infinity War</div>
+                <?php echo strtoupper($Topic);?>
             </div>
             <div class="col-2 pt">
                 Author:
             </div>
-            <div class="col-10 pt-tx-s">
-                <div>Tom Hiddleton</div>
+            <div class="col-10 pt-tx">
+                <?php echo $Author;?>
             </div>
             <div class="col-2 pt">
                 Date:
             </div>
-            <div class="col-10 pt-tx-s">
-                <div>February 17 2018</div>
+            <div class="col-10 pt-tx">
+                <?php echo $createdDate;?>
             </div>
             <div class="col-2 pt">
                 Theory:
             </div>
-            <div class="col-10 pt-tx">
-                <div>
-                    If you’ve read the original storyline “The Infinity Gauntlet”, you know that Adam Warlock features heavily into the plot, especially in the resolution of the threat. We even briefly saw Adam’s new cocoon in the post-credits scene of Guardians of the Galaxy Vol.2. It would make sense that his introduction would appear during Avengers: Infinity War, but that isn’t the case. Both James Gunn and Kevin Feige have confirmed that Adam Warlock will not appear during Infinity War.
-                </div>
+            <div class="col-10 pt">
+                <?php echo $Theory;?>
             </div>
         </div>
     </div>

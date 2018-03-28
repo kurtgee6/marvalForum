@@ -49,7 +49,7 @@
                                 Write your theory:
                             </div>
                             <div class="col-8">
-                                <textarea class="form-control" name="theory" rows="6" required></textarea>
+                                <textarea class="form-control" name="theory" rows="4" required></textarea>
                             </div>
                         </div>
                         <input id="submit" type="submit" value="Submit">
@@ -77,8 +77,8 @@
                         $r = mysqli_query($connection, $selectAll);
                             foreach($r as $k => $v){
                                 echo '<tr>
-                                    <th scope="row">'.$v['uid'].'</th>
-                                    <td>'.$v['topic'].'</td>
+                                    <th scope="row">'.$v['id'].'</th>
+                                    <td><a href="posts.php?id='.$v['id'].'">'.$v['topic'].'</a></td>
                                     <td>'.$v['author'].'</td>
                                     </tr>';
 
